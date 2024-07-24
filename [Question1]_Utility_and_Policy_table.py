@@ -153,7 +153,7 @@ if __name__ == "__main__":
     excempt.extend(neg_reward_cordinates)
     excempt.extend(walls)
     U = calculate_utility(U,excempt,walls)
-    print("=======================================Answer for Q1=======================================")
+    print("=======================================Answer for Q1 Using Value Iteration=======================================")
     print("[Answer for Table 1] Utility values for each cell:")
     print(U)
     policy = find_optimal_policy(U,excempt,walls)
