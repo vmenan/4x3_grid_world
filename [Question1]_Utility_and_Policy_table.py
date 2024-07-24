@@ -125,6 +125,7 @@ def print_grid_policy(policy):
     mapping = {
         "r": "→",
         "d": "↓",
+
         "l": "←",
         "u": "↑",
         " ": " "
@@ -142,7 +143,6 @@ def print_grid_policy(policy):
         print()
 
 
-
 if __name__ == "__main__":
     excempt = list()
     pos_reward_cordinates = [(0, 3)]
@@ -153,6 +153,7 @@ if __name__ == "__main__":
     excempt.extend(neg_reward_cordinates)
     excempt.extend(walls)
     U = calculate_utility(U,excempt,walls)
+    print("=======================================Answer for Q1=======================================")
     print("[Answer for Table 1] Utility values for each cell:")
     print(U)
     policy = find_optimal_policy(U,excempt,walls)

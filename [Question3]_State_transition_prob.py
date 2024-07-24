@@ -119,7 +119,7 @@ if __name__ == "__main__":
     #             if action in policy[state]:
     #                 print(f"State: {state}, Action: {action}, Transition Probabilities: {transition_probabilities[state][action]}")
 
-
+    print("=======================================Answer for Q3=======================================")
     # Print the transition probabilities
     for state in transition_probabilities:
         for action in transition_probabilities[state]:

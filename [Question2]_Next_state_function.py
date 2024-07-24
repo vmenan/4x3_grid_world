@@ -80,4 +80,5 @@ if __name__ == "__main__":
     }
     test_dict = test_NextState(test_dict,walls,100)
     df = pd.DataFrame(test_dict)
+        print("=======================================Answer for Q2=======================================")
     print(df)
